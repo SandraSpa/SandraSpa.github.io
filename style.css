@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    box-sizing: border-box;
+}
 .hero{
     background: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
     min-height: 100vh;
@@ -8,7 +14,7 @@
 nav{
     display: flex;
     align-items: center;
-    padding: 20px 8%;
+    padding: 25px 8%;
 }
 nav .menu-img{
     width: 25px;
@@ -38,11 +44,94 @@ nav ul li a:hover{
 
 }
 button{
-    background: #efefef;
-    height: 30px;
-    width: 60px;
+    background: rgb(143, 191, 12);
+    height: 22px;
+    width: 50px;
     border-radius: 20px;
     border: 0;
     outline: 0;
     cursor: pointer;
+    margin-left: 15px;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: aliceblue;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%; 
+    margin-left: 26px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.active{
+    background: aliceblue;
+}
+.active span{
+    background: grey;
+    margin-left: 4px;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: 80vh;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color:rgba(240, 248, 255, 0.3);
+    width: 70%;
+    border-style: solid;
+    border-color: #6A5ACD;
+    border-width: 1.2px;
+    border-radius: 15px;
+}
+.animation{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: auto;
+
+    background-color:rgba(240, 248, 255, 0.3);
+    border-style: solid;
+    border-color: #6A5ACD;
+    border-width: 1.2px;
+    border-radius: 15px;
+}
+.animation2{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.mailTo{
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    align-items: center;
+
+}
+.mailTo:hover{
+    text-decoration: underline;
+}
+h1{
+    color: aliceblue;
+}
+.email-img{
+    width: 120px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-top: 15px;
 }

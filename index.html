@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff0000">
   <title>Meine Webseite</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheetTrack" href="styleTrack.css">
+  <audio id="music" src="audio/Fresh_Start_pinegroove.mp3" autoplay></audio>
 </head>
 <body>
   <div class="hero">
@@ -12,42 +15,22 @@
       <img src="images/menu.png" class="menu-img">
       <h1>HOME</h1>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">ABOUT ME</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./Work.html">WORK</a></li>
+        <li><a href="./Game.html">GAME</a></li>
+        <li><a href="./About.html">ABOUT ME</a></li>
       </ul>
-      <button type="button">click here</button>
-    </nav>
-    <div class=""></div>
-    
+      <button type="button" onclick="playMusic()" id="btn" ><span></span></button>
+    </nav> 
+
+
+
   </div>
-  <header>
-    <h1>Meine Webseite</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Über uns</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <nav>
-    <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Über uns</a></li>
-        <li><a href="#">Leistungen</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
 
-  <main>
+ 
 
-  </main>
+  <script src="scripts/playMusic.js"></script>
 
-  <footer>
-
-  </footer>
 </body>
 </html>
